@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="flowershop.dao.CommentMapper">
+<select id="getflowercomment" parameterType="FlowerInfo" resultType="Comment">
+       select * from Comment x,UserInfo y where x.NickName=y.NickName and x.fid=#{fid} order by CommentDate desc
+</select>
+<select id="updatenickname" parameterType="userinfo">
+       update Comment set NickName=#{Password} where NickName=#{NickName}
+</select>
+<insert id="writecomment" parameterType="Comment">
+       insert into Comment values(#{CommentId},#{fid},#{NickName},#{CommentContents},#{commentDate})
+</insert>
+<select  id="getmycomment" parameterType="userinfo" resultType="mycomment">
+        select * from Comment x,UserInfo y,FlowerInfo z where x.NickName=y.NickName and x.fid=z.fid and x.NickName=#{NickName} order by CommentDate desc
+</select>
+</mapper>

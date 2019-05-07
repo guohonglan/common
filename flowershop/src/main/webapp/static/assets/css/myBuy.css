@@ -1,0 +1,238 @@
+
+.container {
+    width: 900px;
+    min-height: 500px;
+    position: relative;
+    margin: 0 auto;
+    top: 10px;
+}
+
+.container .search-pro {
+    width: 860px;
+    height: 100px;
+    margin-top: 10px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #fff;
+    border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.container .content-pro {
+    width: 900px;
+    background: #fff;
+}
+
+/*ul-title*/
+
+.container .content-pro ul:first-child {
+    width: 900px;
+    height: 40px;
+    line-height: 40px;
+    background: rgb(245, 245, 245);
+}
+
+.container .content-pro ul:first-child li {
+    float: right;
+    /* width: 29px; */
+    height: 40px;
+    padding: 0 76px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(16, 16, 16, 1);
+    font-size: 14px;
+    font-family: Roboto;
+}
+
+.container .content-pro ul:first-child li:nth-child(1) {
+    float: left;
+    /* width: 59px; */
+    height: 40px;
+    line-height: 40px;
+    margin-left: -27px;
+    /*	background: pink;*/
+}
+
+/*ul-product*/
+
+.container .content-pro .list {
+    width: 900px;
+    margin-bottom: 10px;
+}
+
+.container .content-pro .list .say {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.container .content-pro .list .say input {
+    font-size: 14px;
+}
+
+.container .content-pro .list .say input[type=text] {
+    border-bottom: 1px solid #333;
+    padding: 2px;
+    width: 400px;
+    margin-right: 10px;
+}
+
+.container .content-pro .list .say input[type=button] {
+    width: 80px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container .content-pro .list_pro {
+    width: 900px;
+    height: 100px;
+    /* border: 1px solid rgba(187, 187, 187, 1); */
+    margin-bottom: 0;
+}
+
+.container .content-pro .list_pro li {
+    float: left;
+}
+
+.container .content-pro .list .myBuyD {
+    padding: 10px;
+    border-bottom: 1px solid rgba(187, 187, 187, 1);
+}
+
+.container .content-pro .list .myBuyD a {
+    font-size: 14px;
+    float: right;
+    margin-right: 20px;
+}
+
+.container .content-pro .list .myBuyD i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.container .content-pro .list .myBuyD span {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.container .content-pro .list_pro li label input {
+    top: 50%;
+    transform: translateY(350%);
+    margin-left: 25px;
+}
+
+.container .content-pro .list_pro li img {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    transform: translateY(25%);
+    margin-left: 10px;
+}
+
+.container .content-pro .list_pro li div {
+    top: 50%;
+    /* border: 1px solid rgba(187, 187, 187, 1); */
+    transform: translateY(100%);
+    font-size: 14px;
+    /*	text-align: center;*/
+}
+
+.container .content-pro .list_pro li .name-pro {
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 46px;
+}
+
+.container .content-pro .list_pro li .price_pro,
+.container .content-pro .list_pro li .acount_pro {
+    width: 100px;
+    height: 30px;
+    line-height: 35px;
+    margin-left: 90px;
+}
+
+.container .content-pro .list_pro li .operate-pro {
+    float: right;
+    width: 70px;
+    height: 52px;
+    top: 50%;
+    transform: translateY(40%);
+    margin-left: 70px;
+    border: none;
+    margin-top: 16px
+}
+
+.container .content-pro .list_pro li .operate-pro a {
+    width: 70px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    font-size: 14px;
+}
+
+.container .content-pro .list_pro li .operate-pro a:first-child {
+    text-align: left;
+}
+
+.container .content-pro>div {
+    width: 900px;
+    /* height: 200px; */
+    border: 1px solid rgba(187, 187, 187, 1);
+}
+
+/*ul-payMoney*/
+
+.container>ul:last-child {
+    margin-top: 10px;
+    width: 900px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.container>ul:last-child li .payMoney {
+    width: 200px;
+    height: 40px;
+    border-right: 1px solid rgba(187, 187, 187, 1);
+    margin-left: -509px;
+}
+
+.container>ul:last-child li {
+    float: right;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.container>ul:last-child li:nth-child(1) {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 30px;
+    border-left: 1px solid rgba(187, 187, 187, 1);
+}
+
+.footer .footer-container {
+    margin-top: 15px;
+}
+.price_pro {
+    color: red;
+    font-weight: bolder;
+}
+textarea#com {
+    border: 1px solid gray;
+    margin-left: 50px;
+}
+input.submit-say {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #ccc;
+    float: right;
+    font-size: 15px;
+    margin-top: 70px;
+    margin-right: 10px;
+    color: black;
+}

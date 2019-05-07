@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="flowershop.dao.HeartedMapper">
+<insert id="addhearted" parameterType="hearted">
+   insert into Hearted values(#{heartid},#{NickName},#{fid},#{heartdate})
+</insert>
+<select id="getheartedlist" parameterType="String" resultType="hearted">
+   select * from Hearted x,FlowerInfo y where x.fid=y.fid and NickName=#{NickName} order by heartdate desc
+</select>
+<delete id="deletehearted" parameterType="String">
+   delete from Hearted where heartid=#{heartid}
+</delete>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="flowershop.dao.CartMapper">
+<insert id="addcart" parameterType="cart">
+       insert into Cart values(#{NickName},#{fid},#{Quantity},#{CartDate}) 
+</insert>
+<select id="getflowercount" parameterType="cart" resultType="int">
+       select Quantity from Cart where fid=#{fid} and NickName=#{NickName}
+</select>
+
+<select id="confirmhaveornot" parameterType="cart" resultType="int">
+       select count(*) from cart where fid=#{fid} and NickName=#{NickName}
+</select>
+<update id="updatecart" parameterType="cart">
+       update Cart set Quantity=#{Quantity},CartDate=#{CartDate} where fid=#{fid} and NickName=#{NickName}
+</update>
+<delete id="deletecart" parameterType="cart">
+       delete from Cart where fid=#{fid} and NickName=#{NickName}
+</delete>
+<select id="getusercart" parameterType="cart" resultType="cart">
+       select * from Cart x,FlowerInfo y where x.fid=y.fid and x.NickName=#{NickName} order by CartDate desc
+</select>
+<select id="getconfirmshop" parameterType="cart" resultType="cart">
+       select * from Cart x,FlowerInfo y where x.fid=y.fid and x.NickName=#{NickName} and x.fid=#{fid} order by CartDate desc
+</select>
+<select id="updatenickname" parameterType="userinfo">
+       update Cart set NickName=#{Password} where NickName=#{NickName}
+</select>
+</mapper>

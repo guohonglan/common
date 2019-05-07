@@ -1,0 +1,393 @@
+@import "../vendors/Animate/animate.css";
+/* reset setting */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #F40;
+}
+
+ul {
+  list-style: none;
+}
+
+.cleanfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tc {
+  text-align: center;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+}
+
+.now-place {
+  cursor: pointer;
+}
+
+div {
+  /* background: white; */
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  /*不允许改变尺寸*/
+  resize: none;
+  /*清除外观样式*/
+  /* -webkit-appearance: none; */
+}
+
+/* common setting */
+
+/* ===================================== */
+
+/* body */
+
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  /* background: #f4f4f4; */
+  color: #333;
+}
+
+body>div {
+  margin: 0 auto 10px auto;
+}
+
+/* body end */
+
+/* header-nav */
+
+.header-nav {
+  width: 100%;
+  height: 40px;
+  background: rgb(207, 3, 3);
+  color: white;
+  font-weight: bold;
+}
+
+.header-nav .header-container {
+  position: relative;
+  width: 1150px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+.header-nav .header-container a {
+  color: white;
+  font-weight: bold;
+}
+
+.header-nav .header-container a:hover {
+  /* color: #dfdada; */
+}
+
+.header-container ul {
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.header-container ul div {
+  display: inline-block;
+}
+
+.header-container ul div.loginArea {
+  /* display: none; */
+  margin-left: 20px;
+}
+
+.header-container ul .loginArea {
+  width: 300px;
+}
+
+.l-info,
+.r-info {
+  display: inline-block;
+}
+
+.l-info {
+  position: absolute;
+  left: 0;
+}
+
+.r-info {
+  position: absolute;
+  right: 0;
+}
+
+.l-info ul li {
+  float: left;
+}
+
+.r-info ul li {
+  float: right;
+}
+
+/* .l-info .collect {
+  margin-right: 20px;
+} */
+
+.l-info .collect~li,
+.r-info li {
+  margin-left: 20px;
+}
+
+/* header-nav end */
+
+/* ===================================== */
+
+/* search-area */
+
+.search-area {
+  position: relative;
+  width: 1150px;
+  height: 100px;
+  padding: 0 20px;
+}
+
+.search-area>div {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  line-height: 100px;
+}
+
+.search-area .logo-container img {
+  height: 55px;
+}
+
+.search-container {
+  position: absolute;
+  right: 50px;
+  margin-top: 10px;
+}
+
+.search-container form input:first-child {
+  width: 300px;
+  height: 35px;
+  border: 1px solid rgb(207, 3, 3);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.search-container form input:nth-child(2) {
+  position: relative;
+  top: 1px;
+  right: 5px;
+  width: 100px;
+  height: 35px;
+  border: 1px solid rgb(207, 3, 3);
+  background: #fff;
+  background: rgb(207, 3, 3);
+  line-height: normal;
+  color: white;
+  font-weight: bold;
+}
+
+/* search-area end */
+
+/* ===================================== */
+
+/* container */
+
+.container {
+  width: 1150px;
+  /* height: 490px; */
+  font-size: 0;
+  padding: 0;
+  background: none;
+}
+
+/* container category end */
+nav.default {
+    /* min-width: 1200px; */
+    height: 40px;
+    border-bottom: 3px solid rgb(207, 3, 3);
+    width: 1150px;
+    margin-left: 100px;
+}
+.container {
+    max-width: none !important;
+    padding-right: 0;
+    padding-left: 0;
+}
+.default .category {
+    width: 200px;
+    height: 40px;
+}
+.category {
+    position: relative;
+    display: block;
+    float: left;
+    background-color: rgb(207, 3, 3);
+}
+h3.category-title {
+    font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    display: block;
+    margin: 0 0 -5px;
+    padding: 0 15px;
+    color: #fff;
+}
+.default .category .droplist {
+    position: absolute;
+    z-index: 999;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    min-height: 500px;
+}
+.category .droplist {
+    height: 440px;
+    padding: 10px 15px 0;
+    padding: 8px 15px 0\0;
+    border-bottom: 3px solid rgb(207, 3, 3);
+    background-color: #fff;
+    height: auto;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.175);
+}
+.default .category .droplist h4 {
+    font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 6px;
+    padding: 0;
+    color: rgb(207, 3, 3);
+}
+ul.fmlist {
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.droplist .fmlist li {
+    font-size: 12px;
+    line-height: 22px;
+    margin-right: 10px;
+    padding: 0;
+    display: inline-block;
+}
+ul.fm3 {
+    border: 0px solid white;
+}
+span.colorcircle {
+    border-radius: 50%;
+    padding: 0px 5px 0px 10px;
+    border: 0.2px #e9e9e9 solid;
+}
+.fmlist .white{
+	background-color: white;
+}
+.fmlist .yellow{
+	background-color: yellow;
+}
+.fmlist .lemonchiffon{
+	background-color: lemonchiffon;
+}
+.fmlist .red{
+	background-color: red;
+}
+.fmlist .purple{
+	background-color: purple;
+}
+.fmlist .pink{
+	background-color: pink;
+}
+/* ===================================== */
+
+/* nav */
+
+.nav {
+  width: 100%;
+  height: 3px;
+  margin-bottom: 10px;
+}
+
+.nav-container {
+  width: 1150px;
+  height: 3px;
+  margin: 0 auto;
+  background: rgb(207, 3, 3);
+}
+
+/* nav end */
+
+/* ===================================== */
+
+/* path */
+
+.container .path {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* path end */
+
+/* ===================================== */
+
+/* footer-nav */
+
+.footer {
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  /* height: 45px; */
+  margin: 0;
+}
+
+.footer .footer-container {
+  position: relative;
+  width: 1150px;
+  height: 100%;
+  line-height: 45px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 10px;
+}
+
+.footer .footer-container .footer-title {}
+
+.footer .footer-container .footer-link img {
+  margin: 0 40px;
+}
+
+/* footer-nav end */
+
+/* ===================================== */
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="flowershop.dao.FlowerInfoMapper">
+   <!-- 选出所有符合条件的鲜花 -->
+   <select id="getflowerlist" parameterType="FlowerInfo" resultType="FlowerInfo">
+       select * from FlowerInfo 
+       <where>
+        1=1    
+        <if test="fmid!=null">and fmid=#{fmid}</if>
+        <if test="fname!=null">and fname like '%${fname}%' or fmeaning like '%${fname}%'</if>
+        <if test="suitcondition!=null">and suitcondition like '%${suitcondition}%'</if> 
+        <if test="color!=null">and color like '%${color}%'</if>       
+       </where>
+       order by fid desc
+   </select>
+   <!-- 选出前8个符合条件的鲜花 -->
+   <select id="gettop8flowerlist" parameterType="FlowerInfo" resultType="FlowerInfo">
+     select top(8)* from FlowerInfo
+     <where>
+      1=1
+     <if test="fmid!=null">and fmid=#{fmid}</if>
+     <if test="suitcondition!=null">and suitcondition like '%${suitcondition}%'</if> 
+     <if test="color!=null">and color like '%${color}%'</if>    
+     </where>      
+     order by fid desc
+   </select>
+   <!-- 选出热销前5的鲜花 -->
+   <select id="gettopfiveflower" resultType="FlowerInfo">
+      select top(5)* from FlowerInfo order by SaleQuantity desc
+   </select>
+   <!-- 选出指定fid的所有信息 -->
+   <select id="getflowerdetail" parameterType="flowerinfo" resultType="flowerinfo">
+      select * from FlowerInfo x,FlowerMakings y where x.fmid=y.fmid and x.fid=#{fid}
+   </select>
+   <!-- 增加鲜花的销售数量 -->
+   <update id="addsalequantity" parameterType="flowerinfo">
+      update FlowerInfo set SaleQuantity=SaleQuantity+#{SaleQuantity} where fid=#{fid} 
+   </update>
+   <!-- 增加鲜花 -->
+   <insert id="addflower" parameterType="flowerinfo">
+      insert into FlowerInfo values(#{fid},#{fmid},#{fname},#{fmeaning},#{SalePrice},#{fimage},#{SaleQuantity})
+   </insert>
+   <!-- 删除鲜花 -->
+   <delete id="deleteflower" parameterType="String">
+      delete from FlowerInfo where fid=#{fid}
+   </delete>
+   <!-- 更新鲜花 -->
+   <update id="updateflower" parameterType="flowerinfo">
+      update FlowerInfo set fmid=#{fmid},fname=#{fname},fmeaning=#{fmeaning},SalePrice=#{SalePrice},fimage=#{fimage} where fid=#{fid}
+   </update>
+</mapper>

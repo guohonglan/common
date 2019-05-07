@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="flowershop.dao.SlideShowMapper">
+    <select id="getallslideshow" resultType="SlideShow">
+       select * from SlideShow
+    </select>
+    
+    <insert id="addslideshow" parameterType="slideshow">
+       insert into SlideShow values(#{SlideId},#{SlideImage})
+    </insert>
+    
+    <delete id="deleteslideshow" parameterType="String">
+       delete from SlideShow where SlideId=#{SlideId}
+    </delete>
+    
+    <select id="findoneslideshow"  parameterType="String" resultType="String">
+       select SlideImage from SlideShow where SlideId=#{SlideId}
+    </select>
+</mapper>

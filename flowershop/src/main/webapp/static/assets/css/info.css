@@ -1,0 +1,260 @@
+/* container */
+
+.info-container {
+  position: relative;
+  padding: 40px 64px 40px 45px;
+  margin-bottom: 10px;
+}
+
+.info-container>div {
+  display: inline-block;
+}
+
+/* info img */
+
+.info-container .info-img {
+  width: 400px;
+  height: 620px;
+  vertical-align: top;
+}
+
+.info-img img {
+  width: auto;
+  height: 100%;
+}
+
+.main-img,
+.other-img {
+  /* background: #333; */
+}
+
+.info-img .main-img {
+  width: 400px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.info-img .other-img {
+  width: 400px;
+  height: 100px;
+}
+
+.info-img .other-img img.first~img {
+  margin-left: 26px;
+}
+
+/* info img end */
+
+/* ===================================== */
+
+/* info text */
+
+.info-container .info-text {
+  width: 560px;
+  height: 620px;
+  margin-left: 80px;
+  font-size: 15px;
+}
+
+.info-text .title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.info-text .text-other dl {
+  margin-bottom: 30px;
+}
+
+.info-text .text-other dl dt,
+.info-text .text-other dl dd {
+  display: inline-block;
+}
+
+.info-text .text-other dl dt {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+.info-text .text-other dl dd {
+  width: 475px;
+  margin-left: 10px;
+}
+
+/* info text end */
+
+/* ===================================== */
+
+/* info other */
+
+.price {
+  font-size: 30px;
+  margin-right: 90px;
+  margin-bottom: 60px;
+  color: red;
+}
+
+.cart,.buy,.heart {
+  background: rgb(207, 3, 3);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.hadheart{
+  background:orange;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.cart:hover,
+.buy:hover,.heart:hover{
+  color: white;
+}
+
+.buy {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.add-success {}
+
+/* info other end */
+
+/* ===================================== */
+
+/* info-other */
+
+.info-other {
+  width: 1150px;
+  background: none;
+  font-size: 16px;
+}
+
+.info-other .evaluate-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.info-other #evaluate {
+  vertical-align: top;
+  background: rgb(207, 3, 3);
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-other .evaluate ul li {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  border: 1px solid #f4f4f4;
+  margin-bottom: 10px;
+}
+
+/* .info-other .tab-area {
+  display: inline-block;
+  background: none;
+  vertical-align: top;
+  width: 825px;
+}
+
+.tab-area .tab {
+  margin-bottom: 10px;
+}
+
+.tab ul {
+  line-height: 30px;
+  margin-bottom: 0;
+  padding: 25px 20px;
+}
+
+.tab ul li {
+  float: left;
+  padding: 10px;
+}
+
+.tab ul .first~li {
+  margin-left: 10px;
+  padding-left: 20px;
+}
+
+.tab ul li.active {
+  background: #3a97d7;
+  color: #fff;
+}
+
+.tab-container>div {
+  display: none;
+}
+
+.tab-container>div.now {
+  display: block;
+}
+
+.tab-container .evaluate {
+  padding: 20px 10px
+}
+
+.tab-container .evaluate ul li {
+  position: relative;
+  background: #666;
+  margin-bottom: 10px;
+} */
+
+.evaluate ul li div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.evaluate ul li .user-base,
+.evaluate ul li .evaluate-text {
+  display: inline-block;
+  font-size: 13px;
+}
+
+.evaluate ul li .avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.evaluate ul li .user-name {
+  display: block;
+  width: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  margin-left: 17px;
+  font-weight: bolder;
+}
+
+.evaluate ul li .evaluate-text {
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 670px;
+}
+
+.evaluate ul li .avatar img {
+  width: 45px;
+  height: 45px;
+}
+
+.evaluate ul li .time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+}
+
+/* info-other end */
+
+/* container end */

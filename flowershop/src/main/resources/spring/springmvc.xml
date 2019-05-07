@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:task="http://www.springframework.org/schema/task"
+    xmlns:jdbc="http://www.springframework.org/schema/jdbc" 
+    xmlns:lang="http://www.springframework.org/schema/lang"
+    xmlns:tx="http://www.springframework.org/schema/tx" 
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:mvc="http://www.springframework.org/schema/mvc" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+        http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd
+        http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-4.2.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd
+        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.2.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
+        
+        <!-- 配置Controller扫描包 -->  
+        <context:component-scan base-package="flowershop">
+	        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+	    </context:component-scan>         
+       
+        <!-- 配置注解驱动，相当于使用了最新的处理器和适配器，对json数据相应提供支持 -->
+        <mvc:annotation-driven />       
+        
+        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+            <property name="prefix" value="/static/"/>
+            <property name="suffix" value=".jsp"/>
+        </bean>
+
+        
+    <!-- 配置多媒体处理器 -->
+	<!-- 注意：这里id必须填写：multipartResolver -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 最大上传文件大小 -->
+		<property name="maxUploadSize" value="8388608" />
+	</bean>
+	
+	<!-- 配置静态资源映射 -->
+	<mvc:resources location="/static/" mapping="/static/**"/>
+	<mvc:resources location="/static/assets/" mapping="/assets/**"/>
+	<mvc:resources location="/static/uploads/" mapping="/uploads/**"/>
+	<mvc:resources location="/static/Image/" mapping="/Image/**"/>
+	
+	<!-- 配置全局异常处理器 -->
+	<bean class="flowershop.exceptionresolver.ExceptionResolver"/>
+	
+	<mvc:interceptors>
+	    <mvc:interceptor>
+	        <!-- 拦截所有请求，包括二级以上目录 -->
+	        <mvc:mapping path="/**"/>
+	        <bean class="flowershop.interceptor.LoginInterceptor"/>
+	    </mvc:interceptor>	    	    
+	</mvc:interceptors>
+
+</beans>

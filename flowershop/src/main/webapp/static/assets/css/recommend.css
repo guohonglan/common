@@ -1,0 +1,60 @@
+/* ===================================== */
+
+/* recommend */
+
+.recommend {
+    width: 310px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 20px;
+    font-size: 16px;
+    border-right: 1px solid rgb(207, 3, 3);
+}
+
+.recommend .title {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.recommend .title span {}
+
+.recommend .title span::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 15px;
+    background: red;
+    margin-right: 10px;
+}
+
+.recommend .re-list {
+    width: 100%;
+    text-align: center;
+}
+
+.recommend .re-list .re-item {
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f4f4f4;
+}
+
+.re-list .img {
+    background: #333;
+    width: 200px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.re-list p {
+    margin-bottom: 5px;
+}
+
+.re-list p:nth-child(3) {
+    color: red;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+/* recommend end */

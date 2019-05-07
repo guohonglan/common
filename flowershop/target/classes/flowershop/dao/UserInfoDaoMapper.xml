@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="flowershop.dao.UserInfoDaoMapper">
+   <select id="userlogin" parameterType="userinfo" resultType="int">
+       select count(*) from UserInfo 
+       <where>
+        1=1
+        <if test="NickName!=null">and NickName=#{NickName}</if>
+        <if test="Password!=null">and Password=#{Password}</if>
+       </where>
+   </select>
+   
+   <select id="returnloginuserinfo" parameterType="userinfo" resultType="userinfo">
+       select * from UserInfo 
+       <where>
+        1=1
+        <if test="NickName!=null">and NickName=#{NickName}</if>
+        <if test="Password!=null">and Password=#{Password}</if>
+       </where>
+   </select>
+   
+   <update id="changeuserinfo" parameterType="userinfovo">
+      update UserInfo 
+      <set>
+       <if test="userinfo.NickName!=null">NickName=#{userinfo.NickName},</if>
+       <if test="userinfo.Password!=null">Password=#{userinfo.Password},</if>
+       <if test="userinfo.Picture!=null">Picture=#{userinfo.Picture},</if>
+       <if test="userinfo.BirthDay!=null">BirthDay=#{userinfo.BirthDay},</if>
+       <if test="userinfo.Sex!=null">Sex=#{userinfo.Sex},</if>
+       <if test="userinfo.Constellation!=null">Constellation=#{userinfo.Constellation},</if>
+      </set>          
+      where NickName=#{TempName} 
+   </update>
+   
+   <insert id="userregister" parameterType="userinfo">
+      insert into UserInfo (NickName,Password) values (#{NickName},#{Password})
+   </insert>
+   
+   <delete id="deleteuser" parameterType="String">
+      delete from UserInfo where NickName=#{NickName}
+   </delete>
+</mapper>

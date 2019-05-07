@@ -1,0 +1,129 @@
+/* pic-around */
+.pic-around {
+    width: 1150px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-control.left {   
+    margin-left: 150px;
+}
+.carousel-control.right {
+    margin-right: 150px;
+}
+/* pic-around end */
+/* ===================================== */
+/* container */
+.container {
+    width: 1150px;
+    font-size: 0;
+    padding: 0;
+    background: none;
+}
+
+.container>div {
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* container end */
+/* ===================================== */
+
+/* loverflower */
+.floor {
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 1150px;
+    height: 660px;
+}
+.floor .hd {
+    margin: 0 10px 15px;
+    position: relative;
+}
+span.hd-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.bd .bd-1 
+{
+	position: relative;
+    float: left;
+    width: 240px;
+    height: 600px;
+}
+.f1 .bd .bd-1 {  
+    background-color: pink;
+}
+.f2 .bd .bd-1 {  
+    background-color: palevioletred;
+}
+.f3 .bd .bd-1 {  
+    background-color: gold;
+}
+.f1 .bd .floor-goods li a:hover{
+	color: pink;
+}
+.f2 .bd .floor-goods li a:hover{
+	color: palevioletred;
+}
+.f3 .bd .floor-goods li a:hover{
+	color: gold;
+}
+a.f1-pic {
+    font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+    font-size: 18px;
+    line-height: 48px;
+    display: block;
+    width: 194px;
+    height: 52px;
+    margin: 70px auto;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+}
+ul.floor-goods {
+    width: 910px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+.floor-goods li {
+    position: relative;
+    z-index: 9;
+    float: left;
+    overflow: hidden;
+    width: 227.5px;
+    height: 300px;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    padding-top: 10px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+.floor-goods li img {
+    width: 215px;
+    height: 240px;
+}
+a.f1-more:hover {
+    color: rgb(203,7,7);
+    text-decoration: underline;
+}
+a.f1-more {
+    float: right;
+    padding-top: 10px;
+}
+p.floor-name {
+    font-size: 12px;
+}
+p.floor-price {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -5px;
+}

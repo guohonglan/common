@@ -1,0 +1,135 @@
+.container {
+    margin: 0 auto;
+    width: 495px;
+    height: 390px;
+    margin-top: 160px;
+    margin-bottom: 62px;
+    position: relative;
+    /* background: white; */
+    text-align: center;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    /* border: 1px solid rgba(187.187,187,1); */
+    text-align: center;
+    /* position: relative; */
+}
+
+.container .content {
+    width: 400px;
+    height: 490px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.container .content .avatar {
+    position: absolute;
+    top: -114px;
+    left: 50%;
+    width: 176px;
+    height: 176px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid rgba(187, 187, 187, 1);
+    border-radius: 50%;
+    transform: translate(-50%);
+    background: #fff;
+    overflow: hidden;
+}
+
+.container .content .avatar img {
+    width: 100%;
+}
+
+.container .content label {
+    height: 37px;
+    width: 45px;
+    line-height: 37px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.container .content input {
+    width: 241px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 55px;
+    text-align: left;
+    border: 1px solid rgba(187, 187, 187, 1);
+    margin: 5px 0;
+    padding: 0 15px;
+}
+
+.container .content .forget {
+    width: 71px;
+    height: 0px;
+    line-height: 17px;
+    margin-left: 85px;
+}
+
+.container .content .forget a {
+    font-size: 10px;
+}
+.container .content .msg{
+	height:50px;
+}
+.container .content .info {
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.container .content .login input {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 0;
+    border: 1px solid rgba(187, 187, 187, 1);
+    background: none;
+}
+
+.container .content .info_more {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.container .content .info_more .line {
+    display: inline-block;
+    width: 130px;
+    border-top: 1px solid #ccc;
+}
+
+.container .content .info_more .txt {
+    color: #686868;
+    font-size: 12px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.container .content .icon {
+    width: 400px;
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    margin-top: 30px;
+    font-size: 35px;
+    /*    border: 1px solid rgba(187, 187, 187, 1)*/
+}
+
+.container .content .icon a {
+    width: 30px;
+    height: 45px;
+}
+
+.container .content .icon a i {
+    width: 30px;
+    height: 45px;
+    padding: 0px 40px;
+    color: rgb(207, 3, 3);
+    line-height: 45px;
+}

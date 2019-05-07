@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="flowershop.dao.OrderDetailsMapper">
+<insert id="generateorderdetails" parameterType="orderDetails">
+      insert into OrderDetails values(#{orderId},#{fid},#{SalePrice},#{Quantity},#{isCommented})
+</insert>
+<select id="getorderdetailslist" parameterType="String" resultType="orderDetails">
+      select * from FlowerInfo x,OrderDetails y where x.fid=y.fid and y.orderId=#{orderId}
+</select>
+<update id="modiscommented" parameterType="orderDetails">
+      update OrderDetails set isCommented=#{isCommented} where orderId=#{orderId} and fid=#{fid}
+</update>
+<delete id="deleteorderdetail" parameterType="orderDetails">
+      delete from OrderDetails where orderId=#{orderId} and fid=#{fid}
+</delete>
+</mapper>

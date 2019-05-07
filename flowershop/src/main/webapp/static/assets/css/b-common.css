@@ -1,0 +1,451 @@
+.tab-list {
+    margin-left: 20px;
+    width: 100px;
+    padding: 5ps;
+    padding: 30px;
+    margin-left: 20px;
+    border: 1px gray solid;
+    border-radius: 25px;
+    float: left;
+}
+.tab-list .title {
+    /* border: 1px gray solid; */
+    font-size: 16px;
+    padding: 3px;
+    color: red;
+    font-weight: bolder;
+}
+.tab-list ul {
+    padding: 10px;
+    font-size: 14px;
+}
+.tab-list ul li:hover{
+	color:black;
+	font-size: 15px;
+	cursor: pointer;
+}
+.tab-container {
+    float: left;
+    margin-top: 10px;
+    margin-left: 90px;
+    width: 800px;
+    margin-bottom: 100px;
+}
+.container .tab-container>div {
+    display: none;
+}
+
+.container .tab-container>div.now-tab {
+    display: inline-block
+}
+.addslideshow .inner-avatar {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    display: inline-block;   
+    width: 800px;
+    height: 300px;
+}
+
+.addslideshow .inner-avatar img,
+.addslideshow .inner-avatar input {
+    width: 800px;
+    height: 300px;
+}
+
+.inner-avatar img.avatar-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+p#tip {
+    font-size: 30px;
+    margin-left: 340px;
+    margin-top: 120px;
+    color: grey;
+}
+.addslideshow .inner-avatar input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+}
+
+.inner-avatar img {}
+
+input#avatar-up {
+    font-size: 16px;
+    margin-left: 370px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+}
+input#msgimg {
+    font-size: 12px;
+    color: red;
+    margin-left: 100px;
+}
+.hidetip{
+	display:none;
+}
+.block{
+	display:block;
+}
+.deleteslideshow .inner-deletesi {
+    font-size: 15px;
+    width: 800px;
+}
+.deleteslideshow .inner-deletesi ul.listTitle {
+    border: 1px gray solid;
+    padding: 5px;
+    width: 800px;
+}
+.deleteslideshow .inner-deletesi .listTitle li {
+    margin-left: 450px;
+}
+.deleteslideshow .inner-deletesi ul.listpro {
+    width: 800px;
+    padding: 5px;
+    height: 180px;
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+.listpro li {
+    float: left;
+}
+.deleteslideshow .inner-deletesi .listpro .listCheck {
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.deleteslideshow .inner-deletesi .listpro .imgsi {
+    margin-left: 60px;
+    width: 620px;
+    height: 180px;
+}
+.deleteslideshow .inner-deletesi #deletesi {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 9px;
+    margin-left: 710px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+<!--addfm-->
+.addfm {
+    margin-bottom: 50px;
+}
+.addfm .inner-avatar {
+    font-size: 15px;
+    margin-left: 200px;
+}
+input#fmname {
+    border: 1px gray solid;
+    padding: 5px;
+    width: 200px;
+    margin-left: 10px;
+}
+.fmimgpro,.fmbitimgpro {
+    padding-top: 10px;
+}
+.efm {
+    width: 300px;
+    height: 250px;
+    border: 1px gray solid;
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+}
+input#fmimg {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+    float: left;
+}
+img#fmiavater {
+    width: 300px;
+    height: 250px;
+}
+.efmb {
+    width: 400px;
+    height: 160px;
+    border: 1px gray solid;
+    position: relative;
+    display: inline-block;
+}
+input#fmbitimg {
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    float: left;
+    opacity: 0;
+}
+img#fmbavater {
+    width: 400px;
+    height: 160px;
+}
+input#fmbtn {
+    margin-left: 350px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.modfm .inner-avater ul.title {
+    font-size: 14px;
+    width: 800px;
+    height: 30px;
+    border: 1px gray solid;
+}
+ul.title li {
+    float: left;
+    padding: 5px;
+}
+li.fmnametile {
+    margin-left: 15px;
+}
+li.fmimgtitle {
+    margin-left: 110px;
+}
+li.fmbitimgtile {
+    margin-left: 180px;
+}
+li.operatetitle {
+    margin-left: 150px;
+}
+.modfm .inner-avater .fmpro {
+    font-size: 14px;
+    border-bottom: 1px gray solid;
+}
+ul.onepro {
+    width: 800px;
+    height: 155px;
+    border-right: 1px gray solid;
+    border-left: 1px gray solid;
+}
+ul.onepro li {
+    float: left;
+    padding: 10px;
+}
+.fmid {
+    margin-top: 55px;
+    margin-left: 5px;
+}
+.fmname {
+    margin-top: 55px;
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+}
+.fmImage,.fmImage img {
+    width: 180px;
+    height: 130px;
+}
+.fmbitImage,.fmbitImage img {
+    width: 320px;
+    height: 130px;
+}
+.operate {
+    margin-top: 55px;
+}
+
+<!--addflower-->
+.addflower{
+    width: 800px;
+    font-size: 14px;
+    margin-left: 150px;
+}
+.inner-flower {
+    margin-top: -55px;
+    font-size: 14px;
+    margin-left: 150px;
+}
+.inner-flower .fname {
+    height: 30px;
+    float: left;
+}
+input.textpro {
+    width: 250px;
+    border: 1px gray solid;
+    padding: 4px;
+}
+.inner-flower .fmname{
+    height: 60px;
+    width: 300px;
+    margin-left: 0px;
+}
+.flo-le {
+    float: left;
+}
+.fsaleprice {
+    height: 30px;
+}
+select.sel_fmid {
+    padding: 3px;
+}
+.fmeaning {
+    height: 115px;
+}
+textarea.meaningtxt {
+    border: 1px gray solid;
+}
+.in-image {
+    position: relative;
+    width: 250px;
+    height: 312px;
+    display: inline-block;
+    border: 1px gray solid;
+}
+.in-image input {
+    float: left;
+    opacity: 0;
+    position: absolute;
+    width: 250px;
+    height: 312px;
+}
+img#fimg {
+    width: 250px;
+    height: 312px;
+}
+input#btn {
+    font-size: 17px;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+<!--updateflower-->
+.top-op {
+    font-size: 14px;
+    width: 830px;
+    position: absolute;
+}
+li.top-title {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px gray solid;
+    background-color: rgb(207, 3, 3);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+.top-fm{
+	color: white;
+}
+.bottom-pro {
+    margin-top: 50px;
+    font-size: 13px;
+}
+.ftitle {
+    border: 1px gray solid;
+    padding: 4px;
+    width: 830px;
+}
+li.fid-t {
+    float: left;
+    padding-left: 5px;
+}
+li.fmid-t {
+    float: left;
+    padding-left: 20px;
+}
+li.fname-t {
+    float: left;
+    padding-left: 8px;
+}
+li.fm-t {
+    float: left;
+    padding-left: 160px;
+}
+li.fsalpri-t {
+    float: left;
+    padding-left: 150px;
+}
+li.fimg-t {
+    float: left;
+    padding-left: 40px;
+}
+li.fsalquan-t {
+    float: left;
+    padding-left: 40px;
+    padding-right: 23px;
+}
+.fpro {
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+ul.onefpro {
+    height: 130px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+.fidpro {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 47px;
+}
+.fmidpro {
+    float: left;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-top: 47px;
+}
+.fnamepro {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 47px;
+    width: 80px;
+    height: 40px;
+}
+.fmeanpro {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 300px;
+    height: 80px;
+    margin-top: 47px;
+    font-size: 10px;
+}
+.fsalepricepro {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 47px;
+    color: red;
+}
+img.fimagepro {
+    width: 100px;
+    height: 125px;
+    margin-left: 20px;
+    float: left;
+    margin-right: 10px;
+}
+.fsalquanpro {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 47px;
+}
+.floperate {
+    margin-top: 47px;
+    margin-left: 20px;
+    float: left;
+}
+

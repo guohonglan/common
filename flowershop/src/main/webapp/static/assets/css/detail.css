@@ -1,0 +1,126 @@
+.container {
+    min-height: 550px;
+}
+
+.container>div {
+    display: inline-block;
+}
+
+.container .order>div {
+    display: inline-block;
+}
+
+.info-order,
+.state-order,
+.item,
+.res {
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.container .order {
+    background: none;
+    margin-bottom: 10px;
+}
+
+.container .order .info-order {
+    width: 900px;
+    height: 300px;
+    padding: 10px;
+}
+
+.order .info-order .title {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.order .info-order .info ul li {
+    margin-bottom: 10px;
+}
+
+.order .info-order .info ul li div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.order .info-order .info ul li .n {
+    width: 700px;
+}
+
+.order .info-order .info ul li .t {
+    width: 80px;
+}
+
+.order .state-order {
+    width: 840px;
+    height: 240px;
+    margin-left: 10px;
+}
+
+.container .item {
+    margin-bottom: 10px;
+}
+
+.container .item .info-item table {
+    text-align: center;
+}
+
+.container .item .info-item table .info-title {
+    height: 40px;
+    background: #f4f4f4;
+}
+
+.container .item .info-item table #title {
+    background: #f4f4f4;
+    height: 40px;
+}
+
+.container .item .info-item .header-item {
+    width: 500px;
+}
+
+.container .item .info-item .header-price {
+    width: 200px;
+}
+
+.container .item .info-item .header-count {
+    width: 200px;
+}
+
+.container .item .info-item .header-state {
+    width: 250px;
+}
+
+.container .item img {
+    height: 90px;
+}
+
+.container .res {
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    line-height: 50px;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.container .res .mon {
+    color: red;
+}
+.pri {
+    color: red;
+}
+img#fimage {
+    float: left;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+span#fname {
+    float: left;
+    margin-top: 35px;
+    margin-left: 30px;
+}

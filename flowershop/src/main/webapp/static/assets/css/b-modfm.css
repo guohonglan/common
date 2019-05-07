@@ -1,0 +1,40 @@
+.modfm {
+    width: 800px;
+    font-size: 14px;
+    margin-left: 360px;
+}
+.fmidpro {
+    height: 30px;
+}
+.fmnamepro {
+    height: 30px;
+}
+input#fmname {
+    width: 250px;
+    padding: 4px;
+    border: 1px gray solid;
+}
+.efm {
+    margin-left: 78px;
+    margin-top: -95px;
+}
+img#fmiavater {
+    width: 300px;
+    margin-top: -20px;
+}
+.fmbitimgpro {
+    margin-top: -69px;
+}
+img#fmbavater {
+    margin-top: -20px;
+    width: 400px;
+    height: 200px;
+}
+input#fmbtn {
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 150px;
+    /* margin-top: -10px; */
+    cursor: pointer;
+}

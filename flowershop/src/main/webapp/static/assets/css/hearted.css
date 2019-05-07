@@ -1,0 +1,53 @@
+.floor {
+    position: relative;
+    width: 1150px;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 600px;
+}
+.hd {
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bd {
+    position: relative;
+}
+.list{
+    width: 1150px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.list li {
+    width: 138px;
+    height: 210px;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    float: left;
+    padding: 2px;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+img.img {
+    width: 132px;
+    height: 160px;
+}
+span.bd-name {
+    color: black;
+}
+.bd-operate {
+    width: 132px;
+    height: 22px;
+    background-color: #e5e5e5;
+    font-size: 14px;
+}
+.bd-operate:hover, .bd-operate a:hover {
+    background-color: rgb(203,7,7);
+    color: white;
+    cursor: pointer;
+}

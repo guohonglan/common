@@ -1,0 +1,92 @@
+.container {
+    min-height: 550px;
+}
+
+.container .info {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.container .info .get {}
+
+.container .info .get .title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(207, 3, 3);
+    padding-left: 20px;
+    width: 900px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container .info .get input {
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    margin-left: 5px;
+    margin-right: 16px;
+    font-size: 14px;
+    padding: 3px 1px 3px 12px;
+    width: 280px;
+}
+
+.container .info .get {
+    margin-bottom: 20px;
+}
+
+.container .info .get .inner .get-name-c,
+.container .info .get .inner .get-tel-c {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.container .info .get .inner #selectCity p {
+    margin-top: 10px;
+}
+
+.container .count {
+    float: right;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+.info-text {
+    font-size: 14px;
+    display: block;
+    color: rgb(207, 3, 3);
+    margin-top: 10px;
+}
+input#okToBuy {
+    font-weight: bolder;
+    background-color: red;
+    width: 100px;
+    height: 40px;
+}
+span.mon {
+    color: red;
+    font-weight: bolder;
+}
+td.header-price.item-price {
+    color: red;
+}
+img#fimage {
+    float: left;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+span#fname {
+    float: left;
+    margin-left: 70px;
+    margin-top: 35px;
+}
+p.msg {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+}

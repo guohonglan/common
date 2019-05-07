@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [30/Dec/2018:17:37:43 +0800] "GET /flowershop/static/login.jsp HTTP/1.1" 200 5120 http-bio-8088-exec-1 205
+0:0:0:0:0:0:0:1 - - [30/Dec/2018:17:37:48 +0800] "POST /flowershop/login.action HTTP/1.1" 200 13503 http-bio-8088-exec-3 1915
+0:0:0:0:0:0:0:1 - - [30/Dec/2018:17:37:48 +0800] "GET /GetAllSlideShowHandler.ashx HTTP/1.1" 404 - http-bio-8088-exec-4 0
+0:0:0:0:0:0:0:1 - - [30/Dec/2018:17:37:48 +0800] "GET /GetAllFlowerMakingHandler.ashx HTTP/1.1" 404 - http-bio-8088-exec-6 0
+0:0:0:0:0:0:0:1 - - [30/Dec/2018:17:37:51 +0800] "GET /flowershop/static/user.jsp HTTP/1.1" 200 10231 http-bio-8088-exec-7 1262
+0:0:0:0:0:0:0:1 - - [30/Dec/2018:17:37:56 +0800] "GET /flowershop/showImg.action?imageName=C:\fakepath\6.jpg HTTP/1.1" 200 - http-bio-8088-exec-8 18
+0:0:0:0:0:0:0:1 - - [30/Dec/2018:17:38:42 +0800] "GET /flowershop/showImg.action?imageName=C:\fakepath\9.jpg HTTP/1.1" 200 - http-bio-8088-exec-10 17
+0:0:0:0:0:0:0:1 - - [30/Dec/2018:17:40:02 +0800] "GET /flowershop/showImg.action?imageName=E:\Image\9.jpg HTTP/1.1" 200 - http-bio-8088-exec-2 78

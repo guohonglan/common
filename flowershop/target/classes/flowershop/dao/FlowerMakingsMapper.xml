@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="flowershop.dao.FlowerMakingsMapper">
+    <select id="getallflowermakings" parameterType="flowermakings" resultType="flowermakings">
+       select * from FlowerMakings
+       <where>
+       1=1
+       <if test="fmid!=null">and fmid=#{fmid}</if>       
+       </where>
+    </select>
+    
+    <select id="getoneflowermakings" parameterType="String" resultType="flowermakings">
+       select * from FlowerMakings where fmid=#{fmid}
+    </select>
+    
+    <insert id="addfm" parameterType="flowermakings">
+      insert into FlowerMakings values(#{fmid},#{fmName},#{fmImage},#{fmImageBitmap})
+    </insert>
+    
+    <update id="modifyfm" parameterType="flowermakings">
+       update FlowerMakings set fmName=#{fmName},fmImage=#{fmImage},fmImageBitmap=#{fmImageBitmap} where fmid=#{fmid}
+    </update>
+    
+    <delete id="deletefm" parameterType="String">
+       delete from FlowerMakings where fmid=#{fmid}
+    </delete>
+</mapper>
